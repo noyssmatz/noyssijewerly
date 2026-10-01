@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOYSSI El toque final</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="top-announcement">
+    <span>ENVÍO GRATIS EN COMPRAS SUPERIORES A $600 MXN &nbsp;|&nbsp; CALIDAD Y ESTILO</span>
+  </div>
+
+  <header class="navbar">
+    <div class="logo" id="nav-brand">
+      <img src="logo.png" alt="Logo NOYSSI" class="logo-img">
+      <div class="logo-text">
+        <span class="brand-name">NOYSSI</span>
+        <span class="brand-sub">FASHION JEWELRY</span>
+      </div>
+    </div>
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item active">Todos los Productos</a>
+      <a href="collares.html" class="nav-item">Collares</a>
+      <a href="pulseras.html" class="nav-item">Pulseras</a>
+      <a href="pulseras-italianas.html" class="nav-item">Pulseras Italianas</a>
+      <a href="anillos.html" class="nav-item">Anillos</a>
+      <a href="aretes.html" class="nav-item">Aretes</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search-input" placeholder="Buscar joya...">
+      </div>
+      <button class="icon-btn" id="fav-trigger" title="Mis Favoritos">
+        <i class="fa-regular fa-heart"></i>
+        <span class="badge" id="fav-count">0</span>
+      </button>
+      <button class="icon-btn" id="cart-trigger" title="Bolsa de Compras">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="badge" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="banner-carousel-container">
+    <div class="carousel-track" id="carousel-track">
+      <div class="carousel-slide active">
+        <div class="banner-card promo-banner">
+          <div class="banner-content">
+            <span class="banner-tag">OFERTA DE INICIO</span>
+            <h2 class="banner-title">"PRIMERA COLECCIÓN"</h2>
+            <p class="banner-discount">10% OFF <span class="subtext">EN TODAS LAS PIEZAS DE "PRIMERA COLECCIÓN"</span></p>
+            <p class="banner-timer"><i class="fa-regular fa-clock"></i> Válido por tiempo limitado</p>
+            <button class="banner-btn" onclick="scrollToCatalog()">Explorar Colección</button>
+          </div>
+          <div class="banner-media">
+            <img src="banner.png" alt="Joyería Fina" width="500">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <div class="banner-card event-banner">
+          <div class="event-box">
+            <div class="event-badge">PROMO 1</div>
+            <h3>ENVÍO GRATIS</h3>
+            <p>En compras mayores a $700 MXN</p>
+            <i class="fa-solid fa-truck-fast event-icon"></i>
+          </div>
+          <div class="event-box highlight">
+            <div class="event-badge gold">CUPONES</div>
+            <h3>CUPÓN DE REGALO</h3>
+            <p>BUSCA EN NUESTRAS REDES EL CUPÓN ACTIVO Y LLÉVATE UN DESCUENTO <br><strong>CUPÓN CAMBIA CADA SEMANA</strong></p>
+          </div>
+          <div class="event-box">
+            <div class="event-badge">PROMO 2</div>
+            <h3>OBSEQUIO EXCLUSIVO</h3>
+            <p>TRIVIA DE REGALO A PRIMEROS 10 CLIENTES DE PÁGINA</p>
+            <i class="fa-solid fa-gift event-icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-arrow prev" id="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="carousel-arrow next" id="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="carousel-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+    </div>
+  </section>
+
+  <main class="main-wrapper">
+    <section id="view-catalog" class="page-view active">
+      <!-- BOTONES QUE LLEVAN A SUS RESPECTIVAS PÁGINAS -->
+      <div class="category-grid">
+        <a href="collares.html" class="cat-item">
+          <div class="cat-image"><img src="COLLARESBAN.PNG" alt="Collares"></div>
+          <h4>Collares</h4>
+        </a>
+        <a href="pulseras.html" class="cat-item">
+          <div class="cat-image"><img src="PULSERASBAN.png" alt="Pulseras"></div>
+          <h4>Pulseras</h4>
+        </a>
+        <a href="anillos.html" class="cat-item">
+          <div class="cat-image"><img src="ANILLOSBAN.png" alt="Anillos"></div>
+          <h4>Anillos</h4>
+        </a>
+        <a href="aretes.html" class="cat-item">
+          <div class="cat-image"><img src="ARETESBAN.png" alt="Aretes"></div>
+          <h4>Aretes</h4>
+        </a>
+      </div>
+
+      <!-- SECCIÓN FÍJA DE PIEZAS EXCLUSIVAS -->
+      <div class="section-title-wrapper" id="catalog-section">
+        <h2>Piezas Exclusivas</h2>
+        <div class="gold-divider"></div>
+        <p>Diseños atemporales para elevar cualquier estilo</p>
+      </div>
+      <div class="product-grid" id="product-list"></div>
+    </section>
+
+    <section id="view-product-detail" class="page-view">
+      <button class="back-link" onclick="showView('view-catalog')"><i class="fa-solid fa-arrow-left"></i> Volver al Catálogo</button>
+      <div class="product-detail-card" id="detail-card-content"></div>
+    </section>
+  </main>
+
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="drawer-header">
+      <h3>Tu Bolsa de Compras</h3>
+      <button class="close-drawer" id="close-cart-btn">&times;</button>
+    </div>
+    <div class="drawer-body" id="cart-items-wrapper"></div>
+    <div class="drawer-footer">
+      <div class="summary-line">
+        <span>Subtotal</span>
+        <strong id="cart-subtotal">$0 MXN</strong>
+      </div>
+      <button class="checkout-button" onclick="checkout()">PROCESAR PEDIDO</button>
+    </div>
+  </aside>
+
+  <div class="toast-notification" id="toast">Notificación</div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <img src="bannerb.png" alt="Logo NOYSSI" class="logo-img">
+        <h3>NOYSSI</h3>
+        <p>Joyería para todos los estilos y cada momento</p>
+      </div>
+      <div class="f-links">
+        <h5>COLECCIONES</h5>
+        <a href="collares.html">Collares</a>
+        <a href="pulseras.html">Pulseras & Brazaletes</a>
+        <a href="pulseras-italianas.html">Pulseras Italianas & Charms</a>
+        <a href="anillos.html">Anillos</a>
+        <a href="aretes.html">Aretes & Pendientes</a>
+        <h5 class="sub-tag">TODO DE ACERO, CHAPA DE ORO Y PLATA</h5>
+      </div>
+      <div class="f-contact">
+        <h5>ATENCIÓN AL CLIENTE</h5>
+        <p class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:noyssmatz@gmail.com">noyssmatz@gmail.com</a>
+        </p>
+        <p class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+525566794135">+52 (55) 66 79 41 35</a>
+        </p>
+        <div class="social-icons-row f-socials">
+          <a href="https://www.instagram.com/noyssi_jewerly" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 NOYSSI JEWELRY. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
