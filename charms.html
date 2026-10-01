@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección Italiana - Noyssi</title>
+    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="promo-bar">
+        <p>¡Dinámica Especial! En la compra de 2 productos o más llévate un 10% de descuento automático</p>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <img src="logo.png" alt="Noyssi Logo" class="brand-logo" width="100">
+            </a>
+            
+            <nav class="menu">
+                <ul class="nav-links">
+                    <li class="has-mega-menu">
+                        <a href="index.html">COLECCIÓN</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-column">
+                                    <h5>Secciones</h5>
+                                    <ul>
+                                        <li><a href="index.html">Inicio / Destacados</a></li>
+                                        <li><a href="brazaletes.html">Brazaletes</a></li>
+                                        <li><a href="collares.html">Collares</a></li>
+                                        <li><a href="aretes.html">Aretes</a></li>
+                                        <li><a href="anillos.html">Anillos</a></li>
+                                        <li><a href="charms.html">Charms Italianos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="brazaletes.html">BRAZALETES</a></li>
+                    <li><a href="collares.html">COLLARES</a></li>
+                    <li><a href="aretes.html">ARETES</a></li>
+                    <li><a href="anillos.html">ANILLOS</a></li>
+                    <li><a href="charms.html" class="active">CHARMS ITALIANOS</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar joyería...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <button id="cart-btn" onclick="toggleCarrito()">Bolsa (0)</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="category-header-block" style="margin-top: 40px; background-color: #fbfbfb; padding: 30px 20px; border-radius: 4px;">
+        <h2>Arma tu Brazalete Italiano</h2>
+        <p style="max-width: 600px; margin: 10px auto 0 auto; line-height: 1.6;">
+            ¡Crea una pieza única! Elige primero tu base <strong>Italian Bracelet</strong> y después personalízalo agregando tus <strong>Italian Charms</strong> favoritos.
+        </p>
+    </div>
+
+    <div class="category-header-block" style="margin-top: 40px; text-align: left;">
+        <h3 style="font-size: 15px; letter-spacing: 1px; text-transform: uppercase; border-bottom: 2px solid #000; display: inline-block; padding-bottom: 5px;">1. Selecciona tu Italian Bracelet (Base)</h3>
+    </div>
+    
+    <div class="store-container style-fullwidth" style="margin-top: 20px;">
+        <main class="products-grid" id="products-layout-bases-italianas">
+        </main>
+    </div>
+
+    <div class="category-header-block" style="margin-top: 50px; text-align: left;">
+        <h3 style="font-size: 15px; letter-spacing: 1px; text-transform: uppercase; border-bottom: 2px solid #d66db5; display: inline-block; padding-bottom: 5px;">2. Elige tus Italian Charms</h3>
+    </div>
+
+    <div class="store-container style-fullwidth" style="margin-top: 20px;">
+        <main class="products-grid" id="products-layout-charms-italianos">
+        </main>
+    </div>
+
+    <div id="side-cart" class="side-cart">
+        <div class="cart-header">
+            <h2>Tu Bolsa</h2>
+            <button id="close-cart-btn" onclick="toggleCarrito()">✕</button>
+        </div>
+        <div id="cart-products-list" class="cart-products-list">
+            <p class="empty-message">Tu bolsa está vacía.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-box" style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 14px; font-weight: 500;">
+                <span>Total estimado:</span>
+                <span id="cart-total-val">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceder al pago</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+        function renderizarPaginaModulable() {
+            const gridBases = document.getElementById('products-layout-bases-italianas');
+            const gridCharms = document.getElementById('products-layout-charms-italianos');
+            
+            if (!gridBases || !gridCharms || typeof productos === 'undefined') return;
+
+            const listaBases = productos.filter(p => p.seccion === "Italian Bracelet");
+            const listaCharms = productos.filter(p => p.seccion === "Italian Charm");
+
+            function empaquetarHTML(lista, contenedor) {
+                contenedor.innerHTML = "";
+                if(lista.length === 0) {
+                    contenedor.innerHTML = `<p style="color: #999; font-size: 13px;">Próximamente más modelos.</p>`;
+                    return;
+                }
+                lista.forEach(prod => {
+                    const card = document.createElement('div');
+                    card.className = "product-card";
+                    card.innerHTML = `
+                        <div class="product-images">
+                            <img src="${prod.imagen1}" class="img-main" alt="${prod.nombre}">
+                            <img src="${prod.imagen2}" class="img-hover" alt="${prod.nombre}">
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title">${prod.nombre}</h3>
+                            <p class="product-desc">${prod.descripcion}</p>
+                            <p class="product-meta-extra">${prod.extra}</p>
+                            <p class="product-price">$${prod.precio.toFixed(2)}</p>
+                            <button class="add-to-cart-btn" onclick="agregarAlCarrito(${prod.id})">Agregar a la Bolsa</button>
+                        </div>
+                    `;
+                    contenedor.appendChild(card);
+                });
+            }
+
+            empaquetarHTML(listaBases, gridBases);
+            empaquetarHTML(listaCharms, gridCharms);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(renderizarPaginaModulable, 50);
+        });
+    </script>
+</body>
+</html>
