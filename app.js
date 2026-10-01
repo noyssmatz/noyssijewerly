@@ -15,7 +15,7 @@ const products = [
     title: 'COLLAR "NATURAL R"',
     category: "collares",
     price: 80,
-    img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&auto=format&fit=crop",
+    img: "naturalr.jpg",
     desc: "Hermoso collar doble de cadena ligera y de alta calidad, con unión en forma de corazón y collar largo con piedra nácar como detalle. Ideal para lucir tus outfits diarios."
   },
   {
