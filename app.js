@@ -24,7 +24,7 @@ const products = [
     category: "anillos",
     price: 90,
     img: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&auto=format&fit=crop",
-    desc: "Precioso anillo TALLA 18 color dorado, con una increíble corona de brillo y una calidad perfecta"
+    desc: "Precioso anillo TALLA 18 color dorado, con una increíble corona de brillo y una calidad perfecta."
   },
   {
     id: 4,
@@ -40,15 +40,15 @@ const products = [
     category: "aretes",
     price: 160,
     img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&auto=format&fit=crop",
-    desc: "Arete de flor color dorada con toque de perla decorativa. Super ligeros, de calidad y coquetos."
+    desc: "Arete de flor color dorada con toque de perla decorativa. Súper ligeros, de calidad y coquetos."
   },
-{
+  {
     id: 6,
     title: 'BRAZALETE "MARIPOSA"',
     category: "pulseras",
     price: 160,
     img: "MARIPOSA.jpg",
-    desc: "Brazalete de color dorado con forma de mariposa decoraciones de mini perlas"
+    desc: "Brazalete de color dorado con forma de mariposa y decoraciones de mini perlas."
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const products = [
     category: "italiana",
     price: 60,
     img: "https://images.unsplash.com/photo-1611591475140-4388cf1e05d2?w=600&auto=format&fit=crop",
-    desc: "Eslabón intercambiable con diseño de nube color rosa"
+    desc: "Eslabón intercambiable con diseño de nube color rosa."
   },
   {
     id: 702,
@@ -80,7 +80,7 @@ const products = [
     category: "italiana",
     price: 90,
     img: "https://images.unsplash.com/photo-1611591475140-4388cf1e05d2?w=600&auto=format&fit=crop",
-    desc: "Eslabón personalizado con diseño de personaje Duolingo"
+    desc: "Eslabón personalizado con diseño de personaje Duolingo."
   },
   {
     id: 703,
@@ -88,7 +88,7 @@ const products = [
     category: "italiana",
     price: 95,
     img: "https://images.unsplash.com/photo-1611591475140-4388cf1e05d2?w=600&auto=format&fit=crop",
-    desc: "Eslabón de acero con detalle elegante"
+    desc: "Eslabón de acero con detalle elegante."
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ const products = [
     category: "pulseras",
     price: 190,
     img: "https://images.unsplash.com/photo-1611591475140-4388cf1e05d2?w=600&auto=format&fit=crop",
-    desc: "Brazalete de color dorado con piedra nácar autentica y detalles de brillo"
+    desc: "Brazalete de color dorado con piedra nácar auténtica y detalles de brillo."
   },
   {
     id: 10,
@@ -104,7 +104,7 @@ const products = [
     category: "aretes",
     price: 100,
     img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&auto=format&fit=crop",
-    desc: "Arete de cuadro color azul, con perla decorativa. Ideales para toda ocasión, son ligeros, de calidad y muy lindos"
+    desc: "Arete de cuadro color azul, con perla decorativa. Ideales para toda ocasión, ligeros, de calidad y muy lindos."
   },
   {
     id: 11,
@@ -112,7 +112,7 @@ const products = [
     category: "aretes",
     price: 120,
     img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&auto=format&fit=crop",
-    desc: "Arete dorado tipo arracada, tamaño chunky super ligero y brillante, de una calidad increible perfecto para tus looks."
+    desc: "Arete dorado tipo arracada, tamaño chunky súper ligero y brillante, perfecto para tus looks."
   },
   {
     id: 12,
@@ -120,23 +120,23 @@ const products = [
     category: "collares",
     price: 120,
     img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&auto=format&fit=crop",
-    desc: "Precioso collar dorado con detalle de gota super brillante. Ligero y super comodo. Este elevara totalmente tu outfit y tus vives."
+    desc: "Precioso collar dorado con detalle de gota súper brillante. Ligero y cómodo."
   },
   {
     id: 13,
-    title: "RELOG ITALIANO PLATEADO REDONDO",
+    title: "RELOJ ITALIANO PLATEADO REDONDO",
     category: "italiana",
     price: 250,
     img: "https://images.unsplash.com/photo-1611591475140-4388cf1e05d2?w=600&auto=format&fit=crop",
-    desc: "Relog italiano plateado. Super comodo y versatil para uso diario"
+    desc: "Reloj italiano plateado. Súper cómodo y versátil para uso diario."
   },
   {
     id: 14,
-    title: 'ARETES "O Lumiere"',
+    title: 'ARETES "O LUMIERE"',
     category: "aretes",
     price: 200,
     img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&auto=format&fit=crop",
-    desc: "Hermoso arete dorado con detalle de piedra nácar al centro. Brillante, llamativo y con personalidad"
+    desc: "Hermoso arete dorado con detalle de piedra nácar al centro. Brillante, llamativo y con personalidad."
   },
   {
     id: 15,
@@ -144,7 +144,7 @@ const products = [
     category: "anillos",
     price: 100,
     img: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&auto=format&fit=crop",
-    desc: "Hermoso anillo ajustable con un hermoso diseño brillante de flor. Ideal para uso diario si quieres elevar los outfits"
+    desc: "Hermoso anillo ajustable con un diseño brillante de flor. Ideal para uso diario."
   },
   {
     id: 16,
@@ -152,7 +152,7 @@ const products = [
     category: "collares",
     price: 200,
     img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&auto=format&fit=crop",
-    desc: "Brillante collar para resaltar cualquier atuendo de ocasion especial. Sus brillos y diseño elegante pero atractivo hara que todos queden enmorados del atuendo"
+    desc: "Brillante collar para resaltar cualquier atuendo de ocasión especial. Diseño elegante y atractivo."
   },
   {
     id: 17,
@@ -160,15 +160,15 @@ const products = [
     category: "collares",
     price: 200,
     img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&auto=format&fit=crop",
-    desc: "Collar con diseño de corazones con un increible toque de rojo el cual resalta automaticamente. Brillante y comodo."
+    desc: "Collar con diseño de corazones con un toque de rojo. Brillante y cómodo."
   },
- {
+  {
     id: 18,
     title: 'COLLAR "SIMPLE BYE TEAR"',
     category: "collares",
     price: 200,
     img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&auto=format&fit=crop",
-    desc: "Lindo collar minimalista con diseño de lagrimita. Ligero pero muy coqueto y llamativo a la vez."
+    desc: "Lindo collar minimalista con diseño de lágrima. Ligero, coqueto y llamativo."
   },
   {
     id: 19,
@@ -176,11 +176,11 @@ const products = [
     category: "anillos",
     price: 100,
     img: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&auto=format&fit=crop",
-    desc: "Hermoso anillo ajustable con un increible diseño brillante y de colores. Realmente nunca pasaras desapercibida con este accesorio puesto"
+    desc: "Hermoso anillo ajustable con un increíble diseño brillante de colores."
   }
 ];
 
-// Carga inicial de datos persistentes desde localStorage
+// Carga inicial de datos persistentes
 let cart = JSON.parse(localStorage.getItem('noyssi_cart')) || [];
 let favorites = JSON.parse(localStorage.getItem('noyssi_favs')) || [];
 let selectedQty = 1;
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateFavUI();
 });
 
-// Save to localStorage helpers
+// Guardado en localStorage
 function saveCart() {
   localStorage.setItem('noyssi_cart', JSON.stringify(cart));
 }
@@ -209,8 +209,31 @@ function saveFavs() {
 }
 
 // ==========================================
-// 3. RENDERIZADO DE PRODUCTOS SEGÚN PÁGINA
+// 3. RENDERIZADO Y GENERACIÓN DE TARJETAS
 // ==========================================
+function createProductCard(prod) {
+  const isFav = favorites.includes(prod.id);
+  const card = document.createElement('div');
+  card.className = 'product-card';
+  card.innerHTML = `
+    <div class="product-img-box" onclick="openDetail(${prod.id})" style="position: relative; cursor: pointer;">
+      <img src="${prod.img}" alt="${prod.title}" class="product-thumb">
+      <button class="fav-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); toggleFavorite(${prod.id})">
+        <i class="${isFav ? 'fa-solid' : 'fa-regular'} fa-heart"></i>
+      </button>
+    </div>
+    <div class="product-info">
+      <span class="product-cat-tag">${prod.category.toUpperCase()}</span>
+      <h3 class="product-title" onclick="openDetail(${prod.id})" style="cursor: pointer;">${prod.title}</h3>
+      <div class="product-footer" style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+        <p class="product-price" style="margin: 0; font-weight: 700; color: #a36b81;">$${Number(prod.price).toLocaleString()} MXN</p>
+        <button class="add-btn" onclick="addToCart(${prod.id})" style="background-color: #eedbe3; color: #723249; border: none; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; cursor: pointer;">Añadir</button>
+      </div>
+    </div>
+  `;
+  return card;
+}
+
 function renderProducts(categoryFilter) {
   const grid = document.getElementById('product-list');
   if (!grid) return;
@@ -228,26 +251,7 @@ function renderProducts(categoryFilter) {
   }
 
   filtered.forEach(prod => {
-    const isFav = favorites.includes(prod.id);
-    const card = document.createElement('div');
-    card.className = 'product-card';
-    card.innerHTML = `
-      <div class="product-img-box" onclick="openDetail(${prod.id})" style="position: relative; cursor: pointer;">
-        <img src="${prod.img}" alt="${prod.title}" class="product-thumb">
-        <button class="fav-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); toggleFavorite(${prod.id})">
-          <i class="${isFav ? 'fa-solid' : 'fa-regular'} fa-heart"></i>
-        </button>
-      </div>
-      <div class="product-info">
-        <span class="product-cat-tag">${prod.category.toUpperCase()}</span>
-        <h3 class="product-title" onclick="openDetail(${prod.id})" style="cursor: pointer;">${prod.title}</h3>
-        <div class="product-footer" style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
-          <p class="product-price" style="margin: 0; font-weight: 700; color: #a36b81;">$${Number(prod.price).toLocaleString()} MXN</p>
-          <button class="add-btn" onclick="addToCart(${prod.id})" style="background-color: #eedbe3; color: #723249; border: none; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; cursor: pointer;">Añadir</button>
-        </div>
-      </div>
-    `;
-    grid.appendChild(card);
+    grid.appendChild(createProductCard(prod));
   });
 }
 
@@ -466,26 +470,7 @@ function setupEventListeners() {
       }
 
       filtered.forEach(prod => {
-        const isFav = favorites.includes(prod.id);
-        const card = document.createElement('div');
-        card.className = 'product-card';
-        card.innerHTML = `
-          <div class="product-img-box" onclick="openDetail(${prod.id})" style="position: relative; cursor: pointer;">
-            <img src="${prod.img}" alt="${prod.title}" class="product-thumb">
-            <button class="fav-btn ${isFav ? 'active' : ''}" onclick="event.stopPropagation(); toggleFavorite(${prod.id})">
-              <i class="${isFav ? 'fa-solid' : 'fa-regular'} fa-heart"></i>
-            </button>
-          </div>
-          <div class="product-info">
-            <span class="product-cat-tag">${prod.category.toUpperCase()}</span>
-            <h3 class="product-title" onclick="openDetail(${prod.id})" style="cursor: pointer;">${prod.title}</h3>
-            <div class="product-footer" style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
-              <p class="product-price" style="margin: 0; font-weight: 700; color: #a36b81;">$${Number(prod.price).toLocaleString()} MXN</p>
-              <button class="add-btn" onclick="addToCart(${prod.id})" style="background-color: #eedbe3; color: #723249; border: none; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; cursor: pointer;">Añadir</button>
-            </div>
-          </div>
-        `;
-        grid.appendChild(card);
+        grid.appendChild(createProductCard(prod));
       });
     });
   }
